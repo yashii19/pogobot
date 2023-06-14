@@ -7,28 +7,29 @@
 **/
 
 /** \file
-Pogobot lyna code 8, ir3.
+Pogobot lyna code 6, ir.
 
-This file implements the code "Infrared Mesures Behavior".
+This file implements the code "Neighbour Mesures Behavior".
 
 It exercises the following features: RGB LED, low-level infrared
 transmission API.
 
 Details:
 
-Robot SENDER continuously emits a specific message in each direction in a frequency given
+The robot continuously emits a specific message in each direction
+- each message has a size SIZE.
 - each message begins by an id
-- each message is saturated
+- each message is send depending on an emission probability defined at proba_emission
+The robot then listens. 
+When they receive a message, they change their LED 0 color and add the sender id to their memory.
+They stop when they got at least one message from all the neighbours.
 
-Robot RECEIVER continuously listen. It computes the success scale on 100 messages.
-It then light the LED with a color corresponding to the success scale.
-Robot BOTH continuously emits as SENDER and continuously listens as RECEIVER.
 
 Testing protocol:
 You need at least 2 robots.
-Charge this script with SENDER defined on Robot A
-Charge the script with RECEIVER defined on Robot B.
-Place Robot A in the center of the arena and place Robot B in front of it. You can try different position of Robot B and observe the results.
+Charge this script on all the robots
+Place Robot A in the center of the arena and place the other around it.
+You can try different position of the robots, change the emission probability, size of messages, number of robots and observe the results.
 
  */
 
@@ -36,296 +37,144 @@ Place Robot A in the center of the arena and place Robot B in front of it. You c
 #include "time.h"
 
 
+#define SIZE_MSG 64 // size messages
+#define P_EMISSION 50 //emission probability between 0 and 100
+#define TICK 30 // frequency of emission
+#define MAX_NEIGHBORS 1 // number of neighbours around
 
-
-
-#define SIZE 64 // number of octet
-#define MESUREMENT_SIZE 1024 //1Ko 
-unsigned long int total_send = 0;
-unsigned long int total_receive = 0;
-
-
-#define FQCY 30 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
-#define MAX_NEIGHBORS 1 // Nombre de voisins maximum dans l'experience : 1 (gazeux), 6 (crystal), (12 pire cas)
-
-
-uint8_t data[SIZE]; // Data des messages
-
-
+uint8_t data[SIZE_MSG]; // data messages
 
 int main(void) {
 
-    pogobot_init();
+
+	pogobot_init();
+    
+    // we create the seed for the emission probability
     srand( pogobot_helper_getRandSeed() );
-  
 
-	pogobot_infrared_set_power(2);
-	//time_reference_t start;
-
-   
-
-    // init data 
-    static int msg_id = 0;
-    for (int i = 0; i < SIZE; ++i)
-    {
+    // set ir power for sending the messages
+    pogobot_infrared_set_power(2);
+    // Initiation of the data sent into the messages.
+    for (int i = 0; i < SIZE_MSG; ++i){
     	data[i] = i%9 + 48;
     }
 
-    time_reference_t timer;
-    pogobot_stopwatch_reset(&timer);
+    
+    time_reference_t tick_timer; // set frequency timer to track the frequency of the loop 
+    time_reference_t exp_timer; // set frequency timer to track the frequency of the loop 
 
+    
+    int msg_counter = 0; // Received message counter.
+    int exp_counter = 0; // Experiments counter.
+    int tick_counter = 0; // Tick counter.
+    int neighbors_counter = 0; // Neighbors perceived counter.
+    int neighbor_known; // 1 if the neighbor is already known, 0 otherwise.
+    int neighbors[MAX_NEIGHBORS] = {-1}; // table with all the neighbors id already found. 
+    
 
+    
 
+    while(1){
+    	
+    	pogobot_stopwatch_reset(&tick_timer); // We start by putting the frequency timer at 0
 
-    int old_cent= 0;
-    int cent = 0;
-    int count = 0;
-    int msg_complete = 1; // msg_complete == 1 if msg received is same as message sent 
-
-	static int msg_counter = 0; // counter of the msg received
-	int msg_received[MAX_NEIGHBORS][200] = { 0 }; // tableau de reception des msg
-	static int tour_counter = 0; // counter of the tour of messages
-	float t_success[10] = {0}; // stock les valeurs du taux de succes
-	int r = 0, g = 0, b = 0; // couleurs de la LED 0
-
-	int p_emission = 100; // 10, 50, 1
-	int neighbors[MAX_NEIGHBORS] = {-1}; // tableau du nombre de voisins
-	int neighbors_known = 0;
-	int neighbors_nb = 0;
-	
-	int ir_sender = 0;
-	int old_ir = 0;
-
-	time_reference_t mystopwatch;
-	time_reference_t t_reception;
-	
-	time_reference_t seconds;
-	int counter = 0;
-	pogobot_stopwatch_reset( &t_reception);
-
-	//pogobot_stopwatch_reset( &seconds );
-    printf("init ok\n");
-
-
-
-    while (1)
-    {
-
-
-    	data[0] = msg_id;
-		
-		
-		//printf("New message sent : %d \n", msg_id);
-    	msg_id++;
-
-    	if (msg_id >= 200){
-    		msg_id = 0;
-    	}
-
-    	pogobot_stopwatch_reset( &timer );
-		
-		int random = ((float )rand() / (float)21474836.470);
-		//printf("random : %d\n", random);
-    	if (random <= p_emission){
-    		for (int i  = 0; i < 4 ; i++){
-				pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE );
-				pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 1);
-			}
-		}
-		//pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
-
-		
-
-
-
-
-		pogobot_infrared_update();
-
-
-
-		/* read reception fifo buffer */
-		if ( pogobot_infrared_message_available() ){
-
+    	int random = ((float )rand() / (float)21474836.470); // We generate a number between 0 and 100.
+    	
+    	if (random <= P_EMISSION){ // If the random number is < to our emission probability, we send a message.
+    	
+    		
+    		// One Direction *4 format
+    		//for (int i  = 0; i < 4 ; i++){
+			//	pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE_MSG );
+			//}
 			
+			// All Direction format
+			pogobot_infrared_sendMessageAllDirection( 0x1234, (uint8_t *)( data ), SIZE_MSG );
+			pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 1);
+			printf("Message sent.\n");
+		}
+
+
+		
+		pogobot_infrared_update(); // The robot check if he received a message
+		//printf("%d\n", pogobot_infrared_message_available());
+		
+		if ( pogobot_infrared_message_available() ){
 			message_t mr;
 			pogobot_infrared_recover_next_message( &mr );
 
-			//printf("Message recu !! \n");
-				
+			printf("Message received.\n");
+			msg_counter++; // we add 1 to our message counter
 
-			// on verifie que le message est bien le meme que le message envoyé
-			for (int i = 1; i < SIZE; ++i){			
-				if (data[i] != mr.payload[i]){
-					msg_complete = 0;
-				}
-			}
-			//printf("Le message est bien le même\n");
-
-			// si le msg reçu n'est pas le même, on arrête la lecture.
-			if (msg_complete == 0){
-				pogobot_led_setColors(255, 0, 0, 0);
-				printf("Le message reçu ne corresponds pas à celui envoyé. \n");
-				break;
-			}
-
-			printf("new message received : %d \n", mr.payload[0]);
-			cent = mr.payload[0] / 100 ;
-			//printf("cent = %d \n", cent);
-
-		
-
-
-			int msg_size = mr.header.payload_length;
-			total_receive += msg_size;
-			int sender_ir = mr.header._sender_ir_index;
 			int sender_id = mr.header._sender_id;
-			printf("New message received by %d \n number %d ir %d\n", sender_id, mr.payload[0], sender_ir);
-
-			pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
-
-			if (msg_received[sender_id][mr.payload[0]] == 1){
-				printf("message already received\n");
-				ir_sender = 2;
 			
-				pogobot_led_setColors(0, 0, 225, 1);
+			neighbor_known = 0; // first, we check if we already know this neighbor
+			for (int i = 0; i < MAX_NEIGHBORS; i++){ 
+				if (neighbors[i] == sender_id){
+					printf("Le voisin est déjà connu.");
+					neighbor_known = 1;
+				}
+			}
+
+			if (neighbor_known == 1){ // if we already know it, we stop the loop and ignore the rest.
 				break;
+			}else{
+				int i = 0; // we add the neighbor id to the tab at the first empty case.
+				while (i < MAX_NEIGHBORS && neighbors[i] != -1){
+					i++;
+				}
+				neighbors[i] = sender_id;
+				neighbors_counter++; // we add 1 to our neighbor counter
+				pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
+				printf("New neighbor found.\n");
+
 			}
 
-			// si le msg recu est le bon
-			else {
 
-				pogobot_led_setColors(255,0,0,1);
 
-				if (cent == old_cent){
-					msg_received[sender_id][mr.payload[0]] = 1;
-					msg_counter++;
 
-					neighbors_known = 0;
-					
-					for (int i = 0; i < MAX_NEIGHBORS ; i++){
-						if (neighbors[i] == sender_id){
-							printf("Neighbour already known.\n");
-							neighbors_known = 1;
-							break;
-						}
-					}
-					if (neighbors_known == 0){
-						int i = 0;
-						while(i < MAX_NEIGHBORS && neighbors[i] == -1){
-							i++;
-						}
-						neighbors[i] = sender_id;
-						neighbors_nb++;
-					}
-						
-				}
-				else{						
-
-					for (int i = 0; i < 200; i++){
-						msg_received[sender_id][i] = 0;
-					}
-					msg_received[sender_id][mr.payload[0]] = 1 ;
- 
-					msg_counter++;
-
-					neighbors_known = 0;
-					
-					for (int i = 0; i < MAX_NEIGHBORS ; i++){
-						if (neighbors[i] == sender_id){
-							printf("Neighbour already known.\n");
-							neighbors_known = 1;
-							break;
-						}
-					}
-					if (neighbors_known == 0){
-						int i = 0;
-						while(i < MAX_NEIGHBORS && neighbors[i] == -1){
-							i++;
-						}
-						neighbors[i] = sender_id;
-						neighbors_nb++;
-					}
-
-				}
-
-					
-				printf("Nombre de voisins : %d\n", neighbors_nb);
-
-				if ( neighbors_nb == MAX_NEIGHBORS){
-
-					tour_counter++;
-
-					pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 0);
-
-					uint32_t t_final = pogobot_stopwatch_get_elapsed_microseconds( &t_reception );
-
-					printf("Fin du programme. Temps (en microseconds) : %d\n", t_final);
-					printf("Nombre de messages reçus : %d | Nombre de robots identifiés : %d \n", msg_counter, neighbors_nb);
-
-					printf("Nombre de ticks : %d | Proba d'emission : %f | Taille de message : %d\n", counter, p_emission, SIZE);
-
-					printf("\n NOUVEAU TOUR : %d\n",tour_counter );
-
-						
-					for (int i = 0; i < MAX_NEIGHBORS; i++){
-						for (int j= 0; j < 200; j++){
-							msg_received[i][j] = 0;
-						}
-					}
-
-					for (int i = 0; i < MAX_NEIGHBORS ; i++){
-						neighbors[i] = -1;		
-					}
-					neighbors_nb = 0;
-				}
-
-				old_cent = cent;
-					//old_ir = mr.header._sender_ir_index;
-
-					
-					
-
-			} 
-			
-			
-		}else {
-			count++;
-			
-
-			if (count > 1000){
-				pogobot_led_setColors(255,0,0,0);
-				count = 0;
-				ir_sender = 0;
-			}
-			
 		}
-		/*pogobot_led_setColors(r,g,b,0);
-		if (ir_sender == 0){
-			pogobot_led_setColors(225, 0, 0, 1);
-		}else if (ir_sender == 1){
-			pogobot_led_setColors(0, 225, 0, 1);
-		}else if (ir_sender == 2){
-			pogobot_led_setColors(0, 0, 225, 1);
-		}*/
 		
+		pogobot_infrared_clear_message_queue(); // We clear all the messages waiting.
 
+		if (neighbors_counter == MAX_NEIGHBORS){
+			exp_counter++; // We add 1 to our experiment counter.
+			uint32_t exp_time = pogobot_stopwatch_get_elapsed_microseconds( &exp_timer ); // Get the time to compute frequency
 		
-		pogobot_infrared_clear_message_queue();
-
-		uint32_t microseconds = pogobot_stopwatch_get_elapsed_microseconds( &timer );
-	
-		printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&timer));
-		if (microseconds < 1000000 / FQCY) {
-			counter ++;
-			//printf("counter %d : All good.\n ", counter);
-			pogobot_stopwatch_reset(&timer);
-			pogobot_led_setColors(0,255,0,0);
-			msleep((1000000 / FQCY - pogobot_stopwatch_get_elapsed_microseconds( &timer )) / 1000);
+			printf("Fin du programme. Temps (en microseconds) : %ld\n", exp_time);
+			printf("Nombre de messages reçus : %d | Nombre de robots identifiés : %d \n", msg_counter, neighbors_counter);
+			printf("Nombre de ticks : %d | Proba d'emission : %d | Taille de message : %d\n", tick_counter, P_EMISSION, SIZE_MSG);
 			
+			printf("\n NOUVEAU TOUR : %d\n",exp_counter );
 
+			pogobot_stopwatch_reset(&exp_timer); // We start by putting the frequency timer at 0
+			msg_counter = 0;
+			neighbors_counter = 0;
+			tick_counter = 0;
+			for (int i = 0; i < MAX_NEIGHBORS ; i++){
+				neighbors[i] = -1;
+			}
+
+		}
+		
+		//if (exp_counter == 10){ // Whe we reach 10 experiences we stop everything.
+		//	msleep(10000);
+		//	exp_counter = 0;
+		//}
+
+		
+		uint32_t tick_time = pogobot_stopwatch_get_elapsed_microseconds( &tick_timer ); // Get the time to compute frequency
+	
+		if (tick_time < 1000000 / TICK) {
+			//printf("End of the loop. Under the given frequency.\n");
+			pogobot_led_setColors(0,255,0,0); // Green light if we are under the given frequency
+			tick_counter++; // We add one to our tick counter.
+			msleep((1000000 / TICK - pogobot_stopwatch_get_elapsed_microseconds( &tick_timer )) / 1000);
 		}else{
-			//printf("Trop short !\n ");
+			printf("End of the loop. Over the given frequency !!\n"); // Red light if we are over the given frequency
 			pogobot_led_setColors(255,0,0,0);
 		}
+
+    	
     }
 }

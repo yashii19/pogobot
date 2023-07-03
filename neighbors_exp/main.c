@@ -39,7 +39,7 @@ Place Robot A in the center of the arena and place Robot B in front of it. You c
 
 
 
-#define SIZE 64 // number of octet
+#define SIZE 16 // number of octet
 #define MESUREMENT_SIZE 1024 //1Ko 
 unsigned long int total_send = 0;
 unsigned long int total_receive = 0;
@@ -282,10 +282,9 @@ int main(void) {
     				// Close the CSV file
     				//fclose(csv_file);
 
-					printf("Fin du programme. Temps (en microseconds) : %d\n", t_final);
-					printf("Nombre de messages reçus : %d | Nombre de robots identifiés : %d \n", msg_counter, neighbors_nb);
+					printf("Fin du programme.\n Temps : %d\nNombre de messages reçus : %d | Nombre de robots identifiés : %d \n", t_final,msg_counter, neighbors_nb);
 
-					printf("Nombre de ticks : %d | Proba d'emission : %f | Taille de message : %d\n", counter, p_emission, SIZE);
+					//printf("Nombre de ticks : %d | Proba d'emission : %f | Taille de message : %d\n", counter, p_emission, SIZE);
 
 					printf("\n NOUVEAU TOUR : %d\n",tour_counter );
 			

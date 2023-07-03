@@ -36,11 +36,11 @@ Place Robot A in the center of the arena and place Robot B in front of it. You c
 #include "time.h"
 
 
-#define SENDER
-//#define RECEIVER
+//#define SENDER
+#define RECEIVER
 
 
-#define SIZE 380 // number of octet
+#define SIZE 1 // number of octet
 #define MESUREMENT_SIZE 1024 //1Ko 
 unsigned long int total_send = 0;
 unsigned long int total_receive = 0;
@@ -114,9 +114,9 @@ int main(void) {
     	}
     	pogobot_stopwatch_reset( &mystopwatch );
     	pogobot_infrared_sendMessageAllDirection( 0x1234, (uint8_t *)( data ), SIZE );
-		for (int i  = 0; i < 4 ; i++){
-			//pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE );
-		}
+		//for (int i  = 0; i < 4 ; i++){
+		//	pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE );
+		//}
 		//pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
 
 		
@@ -124,6 +124,7 @@ int main(void) {
  	
 		
 		uint32_t microseconds = pogobot_stopwatch_get_elapsed_microseconds( &mystopwatch );
+
 		//printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&mystopwatch));
 		if (microseconds < 1000000 / FQCY) {
 			counter ++;
@@ -160,7 +161,7 @@ int main(void) {
 				pogobot_infrared_recover_next_message( &mr );
 				count = 0;
 
-				//printf("MEssage received by IR %d \n", mr.header._sender_ir_index);
+				//printf("Message received by IR %d \n", mr.header._sender_ir_index);
 
 				int msg_size = mr.header.payload_length;
 

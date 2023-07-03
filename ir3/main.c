@@ -37,8 +37,8 @@ You can try different position of the robots, change the emission probability, s
 #include "time.h"
 
 
-#define SIZE_MSG 64 // size messages
-#define P_EMISSION 50 //emission probability between 0 and 100
+#define SIZE_MSG 16 // size messages
+#define P_EMISSION 90 //emission probability between 0 and 100
 #define TICK 30 // frequency of emission
 #define MAX_NEIGHBORS 1 // number of neighbours around
 
@@ -71,9 +71,10 @@ int main(void) {
     int neighbor_known; // 1 if the neighbor is already known, 0 otherwise.
     int neighbors[MAX_NEIGHBORS] = {-1}; // table with all the neighbors id already found. 
     
-
+    int random2 = ((float )rand() / (float)21474836.470); // We generate a number between 0 and 100.
+    msleep(random2*10);
     
-
+    printf("init ok\n");
     while(1){
     	
     	pogobot_stopwatch_reset(&tick_timer); // We start by putting the frequency timer at 0

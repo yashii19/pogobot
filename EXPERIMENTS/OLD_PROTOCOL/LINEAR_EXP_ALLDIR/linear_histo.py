@@ -1,16 +1,16 @@
 import matplotlib.pyplot as plt
 
 
-x = [0, 0.5, 1,1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 9]
+x = [0, 0.5, 1,1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9]
 
 # EXPERIENCE 1 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=4, RECEIVER=6, SIZEMSG=64octets]
-y1 = [50, 70, 50, 30, 30,50,70,90,100,100,100,90,50,10,0,0,0,0]
-#plt.plot(x, y1, label="senderID = 4\nreceiverID = 6\nsize=64octets")
+y1 = [50, 70, 50, 30, 30,50,70,90,100,100,100,90,50,10,0,0,0,0,0]
+#plt.plot(x, y1, label="senderID = 4\nreceiverID = 6")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=64octets]')
 
 # EXPERIENCE 2 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=6, RECEIVER=4, SIZEMSG=64octets]
-y2 = [10,50,50,30,30,50,70,90,90,100,100,90,90,70,30,0,0,0]
-#plt.plot(x, y2, label="senderID = 6\nreceiverID = 4\nsize=64octets")
+y2 = [10,50,50,30,30,50,70,90,90,100,100,90,90,70,30,0,0,0,0]
+#plt.plot(x, y2, label="senderID = 6\nreceiverID = 4")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=64octets]')
 
 # EXPERIENCE 3 [IR=2,PROTOCOLE =3.5MhZ, FQ=60Hz, SENDER=4, RECEIVER=6, SIZEMSG=64octets]
@@ -55,35 +55,44 @@ y10 = [0,10,70,50,30,30,50,70,70,90,90,100,100,100,90,70,50,0]
 
 # EXPERIENCE 11 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=4, RECEIVER=6, SIZEMSG=1octet]
 y11 = [50,90,70,50,50,70,70,100,100,100,90,70,50,10,0,0,0,0]
-plt.plot(x, y11, label="senderID =4\nreceiverID = 6\nsize=1")
+#plt.plot(x, y11, label="senderID =4\nreceiverID = 6\nsize=1")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=1octet]')
 
 # EXPERIENCE 12 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=6, RECEIVER=4, SIZEMSG=1octet]
 y12 = [10,30,50,50,50,50,70,90,100,100,100,100,90,70,50,10,0,0]
-plt.plot(x, y12, label="senderID = 6\nreceiverID = 4\nsize=1")
+#plt.plot(x, y12, label="senderID = 6\nreceiverID = 4\nsize=1")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=1octet]')
 
 # EXPERIENCE 13 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=4, RECEIVER=6, SIZEMSG=200octet]
 y13 = [30,50,50,30,30,50,70,90,100,100,90,90,50,0,0,0,0,0]
-plt.plot(x, y13, label="senderID =4\nreceiverID = 6\nsize=200")
+#plt.plot(x, y13, label="senderID =4\nreceiverID = 6\nsize=200")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=200octet]')
 
 # EXPERIENCE 14 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=6, RECEIVER=4, SIZEMSG=200octet]
 y14 = [0,50,50,30,50,50,70,90,90,100,100,90,90,30,10,0,0,0]
-plt.plot(x, y14, label="senderID = 6\nreceiverID = 4\nsize=200")
+#plt.plot(x, y14, label="senderID = 6\nreceiverID = 4\nsize=200")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=200octet]')
 
 # EXPERIENCE 15 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=4, RECEIVER=6, SIZEMSG=380octet]
 y15 = [10,50,30,10,30,50,70,90,100,100,90,30,0,0,0,0,0,0]
-plt.plot(x, y15, label="senderID =4\nreceiverID = 6\nsize=380")
+#plt.plot(x, y15, label="senderID =4\nreceiverID = 6\nsize=380")
 #plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=380octet]')
 
 # EXPERIENCE 16 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=6, RECEIVER=4, SIZEMSG=380octet]
 y16 = [0,50,50,10,30,50,70,90,100,100,90,90,30,0,0,0,0,0]
-plt.plot(x, y16, label="senderID = 6\nreceiverID = 4\nsize=380")
-plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz]')
+#plt.plot(x, y16, label="senderID = 6\nreceiverID = 4\nsize=380")
+#plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz]')
 
+# EXPERIENCE 19 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=4[NEW], RECEIVER=6[NEW], SIZEMSG=380octet]
+y19 = [70,70,100,100,100,100,100,100,100,100,100,100,100,100,90,30,10,0,0]
+#plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=64octet]')
+#plt.plot(x, y19, label="senderID =4[NEW]\nreceiverID = 6[NEW]")
+#plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=64octet]')
 
+# EXPERIENCE 20 [IR=2,PROTOCOLE =3.5MhZ, FQ=30Hz, SENDER=6[NEW], RECEIVER=4[NEW], SIZEMSG=380octet]
+y20 = [50,100,100,100,100,100,100,100,100,100,100,100,100,100,100,90,70,10,0]
+plt.plot(x, y20, label="senderID = 6[NEW]\nreceiverID = 4[NEW]")
+plt.title('Pogobot Communication 1D [IRPOWER=2,PROTOCOLE=3.5MhZ,\nF=ALLDIR,FQ=30Hz,SIZEMSG=64octet]')
 
 
 

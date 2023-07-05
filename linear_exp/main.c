@@ -36,17 +36,17 @@ Place Robot A in the center of the arena and place Robot B in front of it. You c
 #include "time.h"
 
 
-//#define SENDER
-#define RECEIVER
+#define SENDER
+//#define RECEIVER
 
 
-#define SIZE 1 // number of octet
+#define SIZE 64 // number of octet
 #define MESUREMENT_SIZE 1024 //1Ko 
 unsigned long int total_send = 0;
 unsigned long int total_receive = 0;
 
 
-#define FQCY 30 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
+#define FQCY 240 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
 
 
 uint8_t data[SIZE]; // Data des messages

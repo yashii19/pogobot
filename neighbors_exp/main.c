@@ -46,7 +46,7 @@ unsigned long int total_receive = 0;
 
 
 #define FQCY 30 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
-#define MAX_NEIGHBORS 1 // Nombre de voisins maximum dans l'experience : 1 (gazeux), 6 (crystal), (12 pire cas)
+#define MAX_NEIGHBORS 2 // Nombre de voisins maximum dans l'experience : 1 (gazeux), 6 (crystal), (12 pire cas)
 
 
 uint8_t data[SIZE]; // Data des messages
@@ -88,7 +88,7 @@ int main(void) {
 	float t_success[10] = {0}; // stock les valeurs du taux de succes
 	int r = 0, g = 0, b = 0; // couleurs de la LED 0
 
-	int p_emission = 100; // 10, 50, 1
+	int p_emission = 10; // 10, 50, 90
 	int neighbors[MAX_NEIGHBORS] = {-1}; // tableau du nombre de voisins
 	int neighbors_known = 0;
 	int neighbors_nb = 0;
@@ -164,11 +164,11 @@ int main(void) {
 			// si le msg reçu n'est pas le même, on arrête la lecture.
 			if (msg_complete == 0){
 				pogobot_led_setColors(255, 0, 0, 0);
-				printf("Le message reçu ne corresponds pas à celui envoyé. \n");
+				//printf("Le message reçu ne corresponds pas à celui envoyé. \n");
 				break;
 			}
 
-			printf("new message received : %d \n", mr.payload[0]);
+			//printf("new message received : %d \n", mr.payload[0]);
 			cent = mr.payload[0] / 100 ;
 			//printf("cent = %d \n", cent);
 
@@ -179,12 +179,12 @@ int main(void) {
 			total_receive += msg_size;
 			int sender_ir = mr.header._sender_ir_index;
 			int sender_id = mr.header._sender_id;
-			printf("New message received by %d \n number %d ir %d\n", sender_id, mr.payload[0], sender_ir);
+			//printf("New message received by %d \n number %d ir %d\n", sender_id, mr.payload[0], sender_ir);
 
 			pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
 
 			if (msg_received[sender_id][mr.payload[0]] == 1){
-				printf("message already received\n");
+				//printf("message already received\n");
 				ir_sender = 2;
 			
 				pogobot_led_setColors(0, 0, 225, 1);
@@ -204,7 +204,7 @@ int main(void) {
 					
 					for (int i = 0; i < MAX_NEIGHBORS ; i++){
 						if (neighbors[i] == sender_id){
-							printf("Neighbour already known.\n");
+							//printf("Neighbour already known.\n");
 							neighbors_known = 1;
 							break;
 						}
@@ -232,7 +232,7 @@ int main(void) {
 					
 					for (int i = 0; i < MAX_NEIGHBORS ; i++){
 						if (neighbors[i] == sender_id){
-							printf("Neighbour already known.\n");
+							//printf("Neighbour already known.\n");
 							neighbors_known = 1;
 							break;
 						}
@@ -249,7 +249,7 @@ int main(void) {
 				}
 
 					
-				printf("Nombre de voisins : %d\n", neighbors_nb);
+				//printf("Nombre de voisins : %d\n", neighbors_nb);
 
 				// Declare a file pointer for the CSV file
 				FILE *csv_file;
@@ -337,11 +337,11 @@ int main(void) {
 
 		uint32_t microseconds = pogobot_stopwatch_get_elapsed_microseconds( &timer );
 	
-		printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&timer));
+		//printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&timer));
 		if (microseconds < 1000000 / FQCY) {
 			counter ++;
 			//printf("counter %d : All good.\n ", counter);
-			pogobot_stopwatch_reset(&timer);
+			
 			pogobot_led_setColors(0,255,0,0);
 			msleep((1000000 / FQCY - pogobot_stopwatch_get_elapsed_microseconds( &timer )) / 1000);
 			
@@ -350,5 +350,6 @@ int main(void) {
 			//printf("Trop short !\n ");
 			pogobot_led_setColors(255,0,0,0);
 		}
+		pogobot_stopwatch_reset(&timer);
     }
 }

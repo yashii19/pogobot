@@ -1,0 +1,1008 @@
+#############################################################
+# EXPERIENCE 4 2 [33,6] 90 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 63296
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 28818
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 26736
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 27373
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 27430
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 25442
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 29318
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 27562
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 27468
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 27315
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+#############################################################
+# EXPERIENCE 6 2 [33,6] 90 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 60484
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 28373
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 27339
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 27339
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 25003
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 94319
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 3 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 28330
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 27339
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 27340
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 27339
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 90 | Taille de message : 64
+
+
+
+#############################################################
+# EXPERIENCE 4 6 [33,6,23,31,35,26] 90 64 30
+
+ NOUVEAU TOUR : 10
+Fin du programme. Temps (en microseconds) : 24338762
+Nombre de messages reçus : 31 | Nombre de robots identifiés : 6 
+Nombre de ticks : 736 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 3461912
+Nombre de messages reçus : 19 | Nombre de robots identifiés : 6 
+Nombre de ticks : 105 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 16608058
+Nombre de messages reçus : 96 | Nombre de robots identifiés : 6 
+Nombre de ticks : 503 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 9552316
+Nombre de messages reçus : 29 | Nombre de robots identifiés : 6 
+Nombre de ticks : 289 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 5021834
+Nombre de messages reçus : 31 | Nombre de robots identifiés : 6 
+Nombre de ticks : 152 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 66207288
+Nombre de messages reçus : 175 | Nombre de robots identifiés : 6 
+Nombre de ticks : 1999 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 8720180
+Nombre de messages reçus : 45 | Nombre de robots identifiés : 6 
+Nombre de ticks : 264 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 19521578
+Nombre de messages reçus : 37 | Nombre de robots identifiés : 6 
+Nombre de ticks : 591 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 7056535
+Nombre de messages reçus : 19 | Nombre de robots identifiés : 6 
+Nombre de ticks : 214 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 13707918
+Nombre de messages reçus : 50 | Nombre de robots identifiés : 6 
+Nombre de ticks : 415 | Proba d'emission : 90 | Taille de message : 64
+
+#############################################################
+# EXPERIENCE 6 6 [33,4,23,31,35,26] 90 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 12134506
+Nombre de messages reçus : 21 | Nombre de robots identifiés : 6 
+Nombre de ticks : 366 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 35661195
+Nombre de messages reçus : 137 | Nombre de robots identifiés : 6 
+Nombre de ticks : 1079 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 16982300
+Nombre de messages reçus : 26 | Nombre de robots identifiés : 6 
+Nombre de ticks : 514 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 32235749
+Nombre de messages reçus : 53 | Nombre de robots identifiés : 6 
+Nombre de ticks : 975 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 25042587
+Nombre de messages reçus : 34 | Nombre de robots identifiés : 6 
+Nombre de ticks : 757 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 32937042
+Nombre de messages reçus : 29 | Nombre de robots identifiés : 6 
+Nombre de ticks : 995 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 44067012
+Nombre de messages reçus : 71 | Nombre de robots identifiés : 6 
+Nombre de ticks : 1332 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 22321953
+Nombre de messages reçus : 35 | Nombre de robots identifiés : 6 
+Nombre de ticks : 674 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 5779213
+Nombre de messages reçus : 14 | Nombre de robots identifiés : 6 
+Nombre de ticks : 175 | Proba d'emission : 90 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 10730648
+Nombre de messages reçus : 41 | Nombre de robots identifiés : 6 
+Nombre de ticks : 325 | Proba d'emission : 90 | Taille de message : 64
+
+
+
+#############################################################
+# EXPERIENCE 4 2 [33,6] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 62837
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 92468
+Nombre de messages reçus : 6 | Nombre de robots identifiés : 2 
+Nombre de ticks : 3 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 61577
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 125697
+Nombre de messages reçus : 10 | Nombre de robots identifiés : 2 
+Nombre de ticks : 4 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 124666
+Nombre de messages reçus : 8 | Nombre de robots identifiés : 2 
+Nombre de ticks : 4 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 166331
+Nombre de messages reçus : 6 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 25596
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 56096
+Nombre de messages reçus : 6 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 130555
+Nombre de messages reçus : 10 | Nombre de robots identifiés : 2 
+Nombre de ticks : 4 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 28163
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 6 2 [33,6] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 160643
+Nombre de messages reçus : 9 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 28171
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 27144
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 26218
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 92502
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 3 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 55995
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 2 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 162797
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 95522
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 3 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 26121
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 24510
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 50 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 4 6 [33,6,23,31,35,26] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 222569
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 7 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 96137
+Nombre de messages reçus : 8 | Nombre de robots identifiés : 6 
+Nombre de ticks : 3 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 589844
+Nombre de messages reçus : 38 | Nombre de robots identifiés : 6 
+Nombre de ticks : 18 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 625966
+Nombre de messages reçus : 29 | Nombre de robots identifiés : 6 
+Nombre de ticks : 19 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 158960
+Nombre de messages reçus : 13 | Nombre de robots identifiés : 6 
+Nombre de ticks : 5 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 922250
+Nombre de messages reçus : 42 | Nombre de robots identifiés : 6 
+Nombre de ticks : 28 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 285093
+Nombre de messages reçus : 14 | Nombre de robots identifiés : 6 
+Nombre de ticks : 9 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 129385
+Nombre de messages reçus : 10 | Nombre de robots identifiés : 6 
+Nombre de ticks : 4 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 817753
+Nombre de messages reçus : 31 | Nombre de robots identifiés : 6 
+Nombre de ticks : 25 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 658813
+Nombre de messages reçus : 27 | Nombre de robots identifiés : 6 
+Nombre de ticks : 20 | Proba d'emission : 50 | Taille de message : 64
+
+
+
+#############################################################
+# EXPERIENCE 6 6 [33,6,23,31,35,26] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 819558
+Nombre de messages reçus : 20 | Nombre de robots identifiés : 6 
+Nombre de ticks : 25 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 1182091
+Nombre de messages reçus : 42 | Nombre de robots identifiés : 6 
+Nombre de ticks : 36 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 787736
+Nombre de messages reçus : 29 | Nombre de robots identifiés : 6 
+Nombre de ticks : 24 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 1907849
+Nombre de messages reçus : 43 | Nombre de robots identifiés : 6 
+Nombre de ticks : 58 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 717316
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 22 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 456882
+Nombre de messages reçus : 22 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 356343
+Nombre de messages reçus : 14 | Nombre de robots identifiés : 6 
+Nombre de ticks : 11 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 787402
+Nombre de messages reçus : 23 | Nombre de robots identifiés : 6 
+Nombre de ticks : 24 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 753489
+Nombre de messages reçus : 25 | Nombre de robots identifiés : 6 
+Nombre de ticks : 23 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 1183648
+Nombre de messages reçus : 24 | Nombre de robots identifiés : 6 
+Nombre de ticks : 36 | Proba d'emission : 50 | Taille de message : 64
+
+#############################################################
+# EXPERIENCE 4 12 [35,10,9,23,33,6,1,26,31,7,34,22] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 13757704
+Nombre de messages reçus : 78 | Nombre de robots identifiés : 12 
+Nombre de ticks : 416 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 14550748
+Nombre de messages reçus : 102 | Nombre de robots identifiés : 12 
+Nombre de ticks : 440 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 2735793
+Nombre de messages reçus : 20 | Nombre de robots identifiés : 12 
+Nombre de ticks : 83 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 14938420
+Nombre de messages reçus : 85 | Nombre de robots identifiés : 12 
+Nombre de ticks : 452 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 7837316
+Nombre de messages reçus : 46 | Nombre de robots identifiés : 12 
+Nombre de ticks : 237 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 12932017
+Nombre de messages reçus : 86 | Nombre de robots identifiés : 12 
+Nombre de ticks : 391 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 4855279
+Nombre de messages reçus : 46 | Nombre de robots identifiés : 12 
+Nombre de ticks : 147 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 9023975
+Nombre de messages reçus : 53 | Nombre de robots identifiés : 12 
+Nombre de ticks : 273 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 9822596
+Nombre de messages reçus : 65 | Nombre de robots identifiés : 12 
+Nombre de ticks : 297 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 7961237
+Nombre de messages reçus : 62 | Nombre de robots identifiés : 12 
+Nombre de ticks : 241 | Proba d'emission : 50 | Taille de message : 64
+
+#############################################################
+# EXPERIENCE 6 12 [35,10,9,23,33,4,1,26,31,7,34,22] 50 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 12225037
+Nombre de messages reçus : 91 | Nombre de robots identifiés : 12 
+Nombre de ticks : 370 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 6183099
+Nombre de messages reçus : 54 | Nombre de robots identifiés : 12 
+Nombre de ticks : 187 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 12897865
+Nombre de messages reçus : 89 | Nombre de robots identifiés : 12 
+Nombre de ticks : 390 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 10018813
+Nombre de messages reçus : 68 | Nombre de robots identifiés : 12 
+Nombre de ticks : 303 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 7193650
+Nombre de messages reçus : 51 | Nombre de robots identifiés : 12 
+Nombre de ticks : 218 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 3532928
+Nombre de messages reçus : 26 | Nombre de robots identifiés : 12 
+Nombre de ticks : 107 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 9688134
+Nombre de messages reçus : 68 | Nombre de robots identifiés : 12 
+Nombre de ticks : 293 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 3302984
+Nombre de messages reçus : 21 | Nombre de robots identifiés : 12 
+Nombre de ticks : 100 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 5023949
+Nombre de messages reçus : 61 | Nombre de robots identifiés : 12 
+Nombre de ticks : 152 | Proba d'emission : 50 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 9681906
+Nombre de messages reçus : 81 | Nombre de robots identifiés : 12 
+Nombre de ticks : 293 | Proba d'emission : 50 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 4 6 [33,6,23,31,35,26] 16 64 30
+
+ NOUVEAU TOUR : 31
+Fin du programme. Temps (en microseconds) : 193311
+Nombre de messages reçus : 12 | Nombre de robots identifiés : 6 
+Nombre de ticks : 6 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 32
+Fin du programme. Temps (en microseconds) : 455032
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 33
+Fin du programme. Temps (en microseconds) : 423277
+Nombre de messages reçus : 13 | Nombre de robots identifiés : 6 
+Nombre de ticks : 13 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 34
+Fin du programme. Temps (en microseconds) : 786626
+Nombre de messages reçus : 35 | Nombre de robots identifiés : 6 
+Nombre de ticks : 24 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 35
+Fin du programme. Temps (en microseconds) : 394550
+Nombre de messages reçus : 16 | Nombre de robots identifiés : 6 
+Nombre de ticks : 12 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 36
+Fin du programme. Temps (en microseconds) : 223801
+Nombre de messages reçus : 10 | Nombre de robots identifiés : 6 
+Nombre de ticks : 7 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 37
+Fin du programme. Temps (en microseconds) : 291978
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 9 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 38
+Fin du programme. Temps (en microseconds) : 192378
+Nombre de messages reçus : 13 | Nombre de robots identifiés : 6 
+Nombre de ticks : 6 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 39
+Fin du programme. Temps (en microseconds) : 355287
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 11 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 40
+Fin du programme. Temps (en microseconds) : 257378
+Nombre de messages reçus : 11 | Nombre de robots identifiés : 6 
+Nombre de ticks : 8 | Proba d'emission : 16 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 4 2 [6,31] 16 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 359983
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 11 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 294506
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 9 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 157270
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 96671
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 3 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 1251722
+Nombre de messages reçus : 9 | Nombre de robots identifiés : 2 
+Nombre de ticks : 38 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 428743
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 13 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 255989
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 8 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 556022
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 17 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 426472
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 13 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 323872
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 10 | Proba d'emission : 16 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 6 2 [4,31] 16 64 30
+
+#############################################################
+# EXPERIENCE 6 6 [33,6,23,31,35,26] 16 64 30
+
+ NOUVEAU TOUR : 21
+Fin du programme. Temps (en microseconds) : 223260
+Nombre de messages reçus : 13 | Nombre de robots identifiés : 6 
+Nombre de ticks : 7 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 22
+Fin du programme. Temps (en microseconds) : 460616
+Nombre de messages reçus : 11 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 23
+Fin du programme. Temps (en microseconds) : 220199
+Nombre de messages reçus : 12 | Nombre de robots identifiés : 6 
+Nombre de ticks : 7 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 24
+Fin du programme. Temps (en microseconds) : 327849
+Nombre de messages reçus : 8 | Nombre de robots identifiés : 6 
+Nombre de ticks : 10 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 25
+Fin du programme. Temps (en microseconds) : 356472
+Nombre de messages reçus : 16 | Nombre de robots identifiés : 6 
+Nombre de ticks : 11 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 26
+Fin du programme. Temps (en microseconds) : 585790
+Nombre de messages reçus : 16 | Nombre de robots identifiés : 6 
+Nombre de ticks : 18 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 27
+Fin du programme. Temps (en microseconds) : 525238
+Nombre de messages reçus : 17 | Nombre de robots identifiés : 6 
+Nombre de ticks : 16 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 28
+Fin du programme. Temps (en microseconds) : 788605
+Nombre de messages reçus : 32 | Nombre de robots identifiés : 6 
+Nombre de ticks : 24 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 29
+Fin du programme. Temps (en microseconds) : 554387
+Nombre de messages reçus : 26 | Nombre de robots identifiés : 6 
+Nombre de ticks : 17 | Proba d'emission : 16 | Taille de message : 64
+
+ NOUVEAU TOUR : 30
+Fin du programme. Temps (en microseconds) : 360837
+Nombre de messages reçus : 21 | Nombre de robots identifiés : 6 
+Nombre de ticks : 11 | Proba d'emission : 16 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 4 2 [33,6] 10 64 30
+
+NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 691657
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 21 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 158785
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 361377
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 11 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 825625
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 25 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 328096
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 10 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 25171
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 1 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 391151
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 12 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 1054477
+Nombre de messages reçus : 6 | Nombre de robots identifiés : 2 
+Nombre de ticks : 32 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 558705
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 17 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 322858
+Nombre de messages reçus : 2 | Nombre de robots identifiés : 2 
+Nombre de ticks : 10 | Proba d'emission : 10 | Taille de message : 64
+
+
+
+#############################################################
+# EXPERIENCE 6 2 [33,6] 10 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 360787
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 11 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 222185
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 7 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 161730
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 622796
+Nombre de messages reçus : 7 | Nombre de robots identifiés : 2 
+Nombre de ticks : 19 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 156869
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 393270
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 12 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 157686
+Nombre de messages reçus : 3 | Nombre de robots identifiés : 2 
+Nombre de ticks : 5 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 426409
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 13 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 792321
+Nombre de messages reçus : 5 | Nombre de robots identifiés : 2 
+Nombre de ticks : 24 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 125339
+Nombre de messages reçus : 4 | Nombre de robots identifiés : 2 
+Nombre de ticks : 4 | Proba d'emission : 10 | Taille de message : 64
+
+
+#############################################################
+# EXPERIENCE 4 6 [33,6,23,31,35,26] 10 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 653047
+Nombre de messages reçus : 23 | Nombre de robots identifiés : 6 
+Nombre de ticks : 20 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 623999
+Nombre de messages reçus : 14 | Nombre de robots identifiés : 6 
+Nombre de ticks : 19 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 984224
+Nombre de messages reçus : 32 | Nombre de robots identifiés : 6 
+Nombre de ticks : 30 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 491660
+Nombre de messages reçus : 15 | Nombre de robots identifiés : 6 
+Nombre de ticks : 15 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 814856
+Nombre de messages reçus : 23 | Nombre de robots identifiés : 6 
+Nombre de ticks : 25 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 887942
+Nombre de messages reçus : 19 | Nombre de robots identifiés : 6 
+Nombre de ticks : 27 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 688263
+Nombre de messages reçus : 18 | Nombre de robots identifiés : 6 
+Nombre de ticks : 21 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 326624
+Nombre de messages reçus : 15 | Nombre de robots identifiés : 6 
+Nombre de ticks : 10 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 887898
+Nombre de messages reçus : 29 | Nombre de robots identifiés : 6 
+Nombre de ticks : 27 | Proba d'emission : 10 | Taille de message : 64
+	
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 749205
+Nombre de messages reçus : 24 | Nombre de robots identifiés : 6 
+Nombre de ticks : 23 | Proba d'emission : 10 | Taille de message : 64
+
+
+
+
+
+#############################################################
+# EXPERIENCE 6 6 [33,6,23,31,35,26] 10 64 30
+
+ NOUVEAU TOUR : 21
+Fin du programme. Temps (en microseconds) : 789233
+Nombre de messages reçus : 15 | Nombre de robots identifiés : 6 
+Nombre de ticks : 24 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 22
+Fin du programme. Temps (en microseconds) : 655881
+Nombre de messages reçus : 17 | Nombre de robots identifiés : 6 
+Nombre de ticks : 20 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 23
+Fin du programme. Temps (en microseconds) : 489538
+Nombre de messages reçus : 19 | Nombre de robots identifiés : 6 
+Nombre de ticks : 15 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 24
+Fin du programme. Temps (en microseconds) : 555804
+Nombre de messages reçus : 19 | Nombre de robots identifiés : 6 
+Nombre de ticks : 17 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 25
+Fin du programme. Temps (en microseconds) : 451556
+Nombre de messages reçus : 17 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 26
+Fin du programme. Temps (en microseconds) : 458138
+Nombre de messages reçus : 21 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 27
+Fin du programme. Temps (en microseconds) : 359382
+Nombre de messages reçus : 15 | Nombre de robots identifiés : 6 
+Nombre de ticks : 11 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 28
+Fin du programme. Temps (en microseconds) : 322540
+Nombre de messages reçus : 13 | Nombre de robots identifiés : 6 
+Nombre de ticks : 10 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 29
+Fin du programme. Temps (en microseconds) : 587368
+Nombre de messages reçus : 8 | Nombre de robots identifiés : 6 
+Nombre de ticks : 18 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 30
+Fin du programme. Temps (en microseconds) : 459518
+Nombre de messages reçus : 9 | Nombre de robots identifiés : 6 
+Nombre de ticks : 14 | Proba d'emission : 10 | Taille de message : 64
+
+#############################################################
+# EXPERIENCE 4 12 [35,10,9,23,33,6,1,26,31,7,34,22] 10 64 30
+
+11,526763,16,12
+12,2306320,70,12
+13,786444,24,12
+14,814121,25,12
+15,1053787,32,12
+16,1409165,43,12 
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 1121521
+Nombre de messages reçus : 44 | Nombre de robots identifiés : 12 
+Nombre de ticks : 34 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 753011
+Nombre de messages reçus : 38 | Nombre de robots identifiés : 12 
+Nombre de ticks : 23 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 849414
+Nombre de messages reçus : 37 | Nombre de robots identifiés : 12 
+Nombre de ticks : 26 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 2271883
+Nombre de messages reçus : 92 | Nombre de robots identifiés : 12 
+Nombre de ticks : 69 | Proba d'emission : 10 | Taille de message : 64
+
+
+
+#############################################################
+# EXPERIENCE 6 12 [35,10,9,23,33,4,1,26,31,7,34,22] 10 64 30
+
+ NOUVEAU TOUR : 11
+Fin du programme. Temps (en microseconds) : 978587
+Nombre de messages reçus : 33 | Nombre de robots identifiés : 12 
+Nombre de ticks : 30 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 12
+Fin du programme. Temps (en microseconds) : 1319310
+Nombre de messages reçus : 64 | Nombre de robots identifiés : 12 
+Nombre de ticks : 40 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 13
+Fin du programme. Temps (en microseconds) : 1910760
+Nombre de messages reçus : 76 | Nombre de robots identifiés : 12 
+Nombre de ticks : 58 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 14
+Fin du programme. Temps (en microseconds) : 1217893
+Nombre de messages reçus : 42 | Nombre de robots identifiés : 12 
+Nombre de ticks : 37 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 15
+Fin du programme. Temps (en microseconds) : 880642
+Nombre de messages reçus : 31 | Nombre de robots identifiés : 12 
+Nombre de ticks : 27 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 16
+Fin du programme. Temps (en microseconds) : 1681982
+Nombre de messages reçus : 85 | Nombre de robots identifiés : 12 
+Nombre de ticks : 51 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 17
+Fin du programme. Temps (en microseconds) : 1383209
+Nombre de messages reçus : 74 | Nombre de robots identifiés : 12 
+Nombre de ticks : 42 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 18
+Fin du programme. Temps (en microseconds) : 1150490
+Nombre de messages reçus : 45 | Nombre de robots identifiés : 12 
+Nombre de ticks : 35 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 19
+Fin du programme. Temps (en microseconds) : 715381
+Nombre de messages reçus : 35 | Nombre de robots identifiés : 12 
+Nombre de ticks : 22 | Proba d'emission : 10 | Taille de message : 64
+
+ NOUVEAU TOUR : 20
+Fin du programme. Temps (en microseconds) : 2676134
+Nombre de messages reçus : 117 | Nombre de robots identifiés : 12 
+Nombre de ticks : 81 | Proba d'emission : 10 | Taille de message : 64
+

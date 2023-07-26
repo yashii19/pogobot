@@ -7,7 +7,7 @@
 **/
 
 /** \file
-Pogobot lyna code 2 random walk.
+Pogobot lyna code 3 random walk.
 
 This file implements the "Random Walk Behavior".
 
@@ -18,7 +18,7 @@ Each SLEEPTIME milliseconds, Robot A chooses a random value for left motor and r
 - RBG LED is always blue/red
 
 Testing protocol:
-Robot A is placed in the arena, and observed for 100 seconds
+Robot is placed in the arena, and observed for 100 seconds
 
 */
 

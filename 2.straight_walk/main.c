@@ -7,7 +7,7 @@
 **/
 
 /** \file
-Pogobot lyna code 1 straight walk.
+Pogobot lyna code 2 straight walk.
 
 This file implements the "Straight Walk Behavior".
 
@@ -18,7 +18,7 @@ Robot goes full speed on left motors and right motors to walk staight.
 - RBG LED is always blue
 
 Testing protocol:
-Robot A is placed in the arena, and observed for 100 seconds
+Robot is placed in the arena, and observed for 100 seconds
 
 */
 

@@ -7,7 +7,7 @@
 **/
 
 /** \file
-Pogobot lyna code 5, dispersion
+Pogobot lyna code 6, dispersion
 
 This file implements the code "Dispersion Behavior".
 
@@ -16,16 +16,19 @@ transmission API.
 
 Details:
 
-Robot A walks randomly and continuously emits a specific message in each direction.
-- RBG LED is always red
+Robot walks randomly and continuously emits a specific message in each direction.
+- RBG LED is blue
 
-Other robots (B, C, ...) continuously listen. When they receive a message, they apply the value received to their motorspeed and emits the same message in each direction.
+When Robot gets a message from another robot close to him, he stops.
+- RBG LED is red
+
+If no one is around anymore, he goes back to randomly walking.
+
 
 Testing protocol:
 You need at least 2 robots or more.
-Charge this script on Robot A
-Charge the script "lyna 3 singlefile tail" on other robots.
-Place all the robot in the arena in a position where everyone can at least communicate with one robot, and observe for 100 seconds
+Charge this script on all Robots
+Place all the robots in the arena in a position where nobody can communicate, and observe for 100 seconds.
 
  */
 

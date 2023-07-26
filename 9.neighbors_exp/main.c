@@ -7,30 +7,29 @@
 **/
 
 /** \file
-Pogobot lyna code 6, ir.
+Pogobot lyna code 9, neighbors_exp.
 
-This file implements the code "Neighbour Mesures Behavior".
+This file implements the code "Neighbors Experiment Behavior".
 
 It exercises the following features: RGB LED, low-level infrared
 transmission API.
 
 Details:
 
-The robot continuously emits a specific message in each direction
-- each message has a size SIZE.
+Each tick, Robot continuously emits a specific message in each direction in a frequency given
 - each message begins by an id
-- each message is send depending on an emission probability defined at proba_emission
-The robot then listens. 
-When they receive a message, they change their LED 0 color and add the sender id to their memory.
-They stop when they got at least one message from all the neighbours.
+- each message has a defined size.
+- the message are sent or not depending on an defined emission probability.
+
+Robot continuously listen.
+When he gets a message from an unknown id, he counts it as a new number.
+When he gets the amount of neighbors defined, he stops and return the time.
 
 
 Testing protocol:
 You need at least 2 robots.
-Charge this script on all the robots
-Place Robot A in the center of the arena and place the other around it.
-You can try different position of the robots, change the emission probability, size of messages, number of robots and observe the results.
-
+Charge this script on every robots.
+Place Robot A in the center of the arena and place other robots around him.
  */
 
 #include "pogobot.h"

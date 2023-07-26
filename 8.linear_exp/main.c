@@ -7,9 +7,9 @@
 **/
 
 /** \file
-Pogobot lyna code 7, ir2.
+Pogobot lyna code 8, linear_exp.
 
-This file implements the code "Infrared Mesures Behavior".
+This file implements the code "Linear Experiment Behavior".
 
 It exercises the following features: RGB LED, low-level infrared
 transmission API.
@@ -18,7 +18,7 @@ Details:
 
 Robot SENDER continuously emits a specific message in each direction in a frequency given
 - each message begins by an id
-- each message is saturated
+- each message has a defined size.
 
 Robot RECEIVER continuously listen. It computes the success scale on 100 messages.
 It then light the LED with a color corresponding to the success scale.
@@ -39,33 +39,43 @@ Place Robot A in the center of the arena and place Robot B in front of it. You c
 #define SENDER
 //#define RECEIVER
 
-#define SIZE_MSG 200 // number of octet
-#define FQCY 30 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
 
-uint8_t data[SIZE_MSG]; // Data des messages
+#define SIZE 64 // number of octet
+#define MESUREMENT_SIZE 1024 //1Ko 
+unsigned long int total_send = 0;
+unsigned long int total_receive = 0;
+
+
+#define FQCY 240 // Frequence d'envoi des messages. 30Hz | 60 Hz | 90 Hz
+
+
+uint8_t data[SIZE]; // Data des messages
 
 
 
 int main(void) {
 
     pogobot_init();
-    
-    // we create the seed for the emission probability
     srand( pogobot_helper_getRandSeed() );
+	pogobot_infrared_set_power(2);
 
-    // set ir power for sending the messages
-    pogobot_infrared_set_power(2);
-    // Initiation of the data sent into the messages.
-    for (int i = 0; i < SIZE_MSG; ++i){
+
+   
+
+    // init data 
+    static int msg_id = 0;
+    for (int i = 0; i < SIZE; ++i)
+    {
     	data[i] = i%9 + 48;
     }
 
-    time_reference_t fqcy_timer;
-    
+
+
+
 
     int old_cent= 0;
     int cent = 0;
-    int counter = 0;
+    int count = 0;
     int msg_complete = 1; // msg_complete == 1 if msg received is same as message sent 
 	static int msg_counter = 0; // counter of the msg received
 	int msg_received[200] = { 0 }; // tableau de reception des msg
@@ -74,8 +84,12 @@ int main(void) {
 	int r = 0, g = 0, b = 0; // couleurs de la LED 0
 	
 	int ir_sender = 0;
-	int fqcy_counter = 0;
+	int old_ir = 0;
+	time_reference_t mystopwatch;
+	time_reference_t seconds;
+	int counter = 0;
 
+	pogobot_stopwatch_reset( &seconds );
     printf("init ok\n");
 
 
@@ -98,24 +112,40 @@ int main(void) {
     	if (msg_id >= 200){
     		msg_id = 0;
     	}
-    	pogobot_stopwatch_reset(&fqcy_timer);
+    	pogobot_stopwatch_reset( &mystopwatch );
     	pogobot_infrared_sendMessageAllDirection( 0x1234, (uint8_t *)( data ), SIZE );
 		//for (int i  = 0; i < 4 ; i++){
-			//pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE );
+		//	pogobot_infrared_sendMessageOneDirection( i, 0x1234, (uint8_t *)( data ), SIZE );
 		//}
+		//pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
+
 		
-		//uint32_t fqcy_time = pogobot_stopwatch_get_elapsed_microseconds( &fqcy_timer );
-		//printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&fqcy_timer));
-		if (fqcy_time < 1000000 / FQCY) {
-			fqcy_counter ++;
+ 		
+ 	
+		
+		uint32_t microseconds = pogobot_stopwatch_get_elapsed_microseconds( &mystopwatch );
+
+		//printf( "Duration: %u microseconds \n ", pogobot_stopwatch_get_elapsed_microseconds(&mystopwatch));
+		if (microseconds < 1000000 / FQCY) {
+			counter ++;
+			//printf("counter %d : All good.\n ", counter);
 			pogobot_led_setColors(0,255,0,0);
-			msleep((1000000 / FQCY - pogobot_stopwatch_get_elapsed_microseconds( &fqcy_timer)) / 1000);
+			msleep((1000000 / FQCY - pogobot_stopwatch_get_elapsed_microseconds( &mystopwatch )) / 1000);
 			
 
 		}else{
 			//printf("Trop short !\n ");
 			pogobot_led_setColors(255,0,0,0);
 		}
+
+
+ 		
+ 		
+
+
+
+
+		
 
 
 #elif defined RECEIVER
@@ -129,20 +159,35 @@ int main(void) {
 			{
 				message_t mr;
 				pogobot_infrared_recover_next_message( &mr );
-				msg_counter = 0;
+				count = 0;
+
+				//printf("Message received by IR %d \n", mr.header._sender_ir_index);
+
+				int msg_size = mr.header.payload_length;
+
+				total_receive += msg_size;
+				
+				if (old_ir != mr.header._sender_ir_index){
+					ir_sender = 2;
+				}else {
+					ir_sender= 1;
+				}
+	
 
 				if (msg_received[mr.payload[0]] == 1 ){
 					//printf("message already received : %d \n", mr.payload[0]);
 					ir_sender = 2;
-				else{
-					ir_sender=1;
-				}
+
 			
 					pogobot_led_setColors(0, 0, 225, 1);
 					break;
 				}
-
+			
+				
+				//printf("new message received : %d \n", mr.payload[0]);
 				cent = mr.payload[0] / 100 ;
+				//printf("cent = %d \n", cent);
+
 
 				// on verifie que le message est bien le meme que le message envoyé
 				for (int i = 1; i < SIZE; ++i){			
@@ -152,6 +197,9 @@ int main(void) {
 				}
 				pogobot_led_setColors( rand()%25, rand()%25, rand()%25, 2);
 				
+
+
+
 				// si le msg reçu n'est pas le même, on arrête la lecture.
 				if (msg_complete == 0){
 					pogobot_led_setColors( rand()%25, rand()%25, 0, 2);
@@ -246,6 +294,7 @@ int main(void) {
 					}
 
 					old_cent = cent;
+					old_ir = mr.header._sender_ir_index;
 					
 
 				} 

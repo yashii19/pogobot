@@ -7,15 +7,15 @@
 **/
 
 /** \file
-Pogobot lyna code 1 straight walk.
+Pogobot lyna code 1 colors.
 
-This file implements the "Straight Walk Behavior".
+This file implements the "Colors Behavior".
 
 It exercises the following features: RGB LED.
 
 Details:
 Robot goes full speed on left motors and right motors to walk staight.
-- RBG LED is always blue
+- RBG LED changes color every second
 
 Testing protocol:
 Robot A is placed in the arena, and observed for 100 seconds
@@ -48,57 +48,60 @@ int main(void) {
         b0 = 0;
       }
       
-      else if (compteur / 10 == 1){
+      else if (compteur % 10 == 1){
         // rouge
         r0 = 255;
         g0 = 0;
         b0 = 0;
       }
       
-      else if (compteur / 10 == 2){
+      else if (compteur % 10 == 2){
         // vert
         r0 = 0;
         g0 = 255;
         b0 = 0;
       }
-      else if (compteur / 10 == 3){
+      else if (compteur % 10 == 3){
         // jaune
         r0 = 255;
         g0 = 255;
         b0 = 0;
       }
-      else if (compteur / 10 == 4){
+      else if (compteur % 10 == 4){
         // orange
         r0 = 255;
         g0 = 69;
         b0 = 0;
       }
-      else if (compteur / 10 == 5){
+      else if (compteur % 10 == 5){
         // bleu
         r0 = 0;
         g0 = 0;
         b0 = 255;
       }
-      else if (compteur / 10 == 6){
+      else if (compteur % 10 == 6){
         // violet
         r0 = 128;
         g0 = 0;
         b0 = 128;
       }
-      else if (compteur / 10 == 7){
+      else if (compteur % 10 == 7){
         // rose
         r0 = 255;
         g0 = 20;
         b0 = 147;
       }
-      else if (compteur / 10 == 8){
+      else if (compteur % 10 == 8){
         // marron
         r0 = 139;
         g0 = 69;
         b0 = 19;
       }
-      else if (compteur / 100 == 1){
+      else if (compteur % 10 == 9){
         // blanc
+        r0 = 255;
+        g0 = 255;
+        b0 = 255;
       }
 
 

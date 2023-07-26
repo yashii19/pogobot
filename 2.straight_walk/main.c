@@ -38,6 +38,7 @@ int main(void) {
       pogobot_led_setColor(0,0,255);
       pogobot_motor_set(motorL, motorFull);
       pogobot_motor_set(motorR, motorFull);
+      printf("%d\n",motorFull );
       msleep(1000);
 
     }

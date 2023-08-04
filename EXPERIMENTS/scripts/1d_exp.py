@@ -106,10 +106,10 @@ y27 = [70,90,100,100,100,100,100,100,100,100,100,100,100,90,10,0,0,0,0,0]
 #--------------------------------------------------------
 
 # GRAPH 1 : OLD PROTOCOLE VS NEW PROTOCOLE
-#plt.plot(x, y1_old, label="robots=old_protocole")
-#plt.plot(x, y1, label="robots=new_protocole")
-#plt.plot(x,y1_update, label="robots=update0407")
-#plt.title('Pogobot Communication 1D \nrobots=[6][4],send_mode=*,ir_power=2,clock=30Hz,msg_len=64')
+#plt.plot(x, y1_old, label="protocole=3.5MHz(beta1)")
+#plt.plot(x, y1, label="protocole=3.5MHz(beta2)")
+#plt.plot(x,y1_update, label="protocole=3.5MHz(final)")
+#plt.title('Communication Protocols\nrobots=[6][4],send_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 
 # GRAPH 2 : FREQUENCIES ROBOTS=[6][4]
 #plt.plot(x, y1, label="clock=30Hz")
@@ -117,7 +117,7 @@ y27 = [70,90,100,100,100,100,100,100,100,100,100,100,100,90,10,0,0,0,0,0]
 #plt.plot(x, y3, label="clock=120Hz")
 #plt.plot(x, y4, label="clock=180Hz")
 #plt.plot(x, y5, label="clock=240Hz")
-#plt.title('Pogobot Communication 1D \nrobots=[6][4],send_mode=*,ir_power=2,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock \nrobots=[6][4],send_mode=*,ir_power=2,msg_len=64')
 
 # GRAPH 3 : FREQUENCIES ROBOTS=[31][32]
 #plt.plot(x, y6, label="clock=30Hz")
@@ -125,7 +125,7 @@ y27 = [70,90,100,100,100,100,100,100,100,100,100,100,100,90,10,0,0,0,0,0]
 #plt.plot(x, y8, label="clock=120Hz")
 #DO NOT UNCOMMENT plt.plot(x, y9, label="clock=180Hz")
 #DO NOT UNCOMMENT plt.plot(x, y10, label="clock=240Hz")
-#plt.title('Pogobot Communication 1D \nrobots=[31][32],send_mode=*,ir_power=2,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock \nrobots=[31][32],send_mode=*,ir_power=2,msg_len=64')
 
 # GRAPH 4 : FREQUENCIES ROBOTS=[35][23]
 #plt.plot(x, y11, label="clock=30Hz")
@@ -133,109 +133,109 @@ y27 = [70,90,100,100,100,100,100,100,100,100,100,100,100,90,10,0,0,0,0,0]
 #plt.plot(x, y13, label="clock=120Hz")
 #plt.plot(x, y14, label="clock=180Hz")
 #plt.plot(x, y15, label="clock=240Hz")
-#plt.title('Pogobot Communication 1D \nrobots=[35][23],send_mode=*,ir_power=2,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock \nrobots=[35][23],send_mode=*,ir_power=2,msg_len=64')
 
 # GRAPH 5 : FREQUENCIES clock=30Hz
-#plt.plot(x, y1, label="robots[6][4]")
+#plt.plot(x, y1, label="robots=[6][4]")
 #plt.plot(x, y6, label="robots=[31][32]")
 #plt.plot(x, y11, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock=30Hz \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 
 # GRAPH 6 : FREQUENCIES clock=60Hz
-#plt.plot(x, y2, label="robots[6][4]")
+#plt.plot(x, y2, label="robots=[6][4]")
 #plt.plot(x, y7, label="robots=[31][32]")
 #plt.plot(x, y12, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=60Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock=60Hz \nsend_mode=*,ir_power=2,clock=60Hz,msg_len=64')
 
 # GRAPH 7 : FREQUENCIES clock=120Hz
-#plt.plot(x, y3, label="robots[6][4]")
+#plt.plot(x, y3, label="robots=[6][4]")
 #plt.plot(x, y8, label="robots=[31][32]")
 #plt.plot(x, y13, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=120Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock=120Hz \nsend_mode=*,ir_power=2,clock=120Hz,msg_len=64')
 
 # GRAPH 8 : FREQUENCIES clock=180Hz
-#plt.plot(x, y4, label="robots[6][4]")
+#plt.plot(x, y4, label="robots=[6][4]")
 #DO NOT UNCOMMENTplt.plot(x, y9, label="robots=[31][32]")
 #plt.plot(x, y14, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=180Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : Clock=180Hz \nsend_mode=*,ir_power=2,clock=180Hz,msg_len=64')
 
 # GRAPH 9 : FREQUENCIES clock=240Hz
-#plt.plot(x, y4, label="robots[6][4]")
+#plt.plot(x, y5, label="robots=[6][4]")
 #DO NOT UNCOMMENTplt.plot(x, y9, label="robots=[31][32]")
-#plt.plot(x, y14, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=240Hz,msg_len=64')
+#plt.plot(x, y15, label="robots=[35][23]")
+#plt.title('Pairwise Communication 1D : Clock=240Hz \nsend_mode=*,ir_power=2,clock=240Hz,msg_len=64')
 
 # GRAPH 10 : IRPOWER ROBOTS=[6][4]
 #plt.plot(x, y16, label="ir_power=1")
 #plt.plot(x, y1, label="ir_power=2")
 #plt.plot(x, y17, label="ir_power=3")
-#plt.title('Pogobot Communication 1D \nrobots=[6][4],send_mode=*,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power \nrobots=[6][4],send_mode=*,clock=30Hz,msg_len=64')
 
 # GRAPH 11 : IRPOWER ROBOTS=[31][32]
 #plt.plot(x, y18, label="ir_power=1")
 #plt.plot(x, y6, label="ir_power=2")
 #plt.plot(x, y19, label="ir_power=3")
-#plt.title('Pogobot Communication 1D \nrobots=[31][32],send_mode=*,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power \nrobots=[31][32],send_mode=*,clock=30Hz,msg_len=64')
 
 # GRAPH 12 : IRPOWER ROBOTS=[35][23]
 #plt.plot(x, y20, label="ir_power=1")
 #plt.plot(x, y11, label="ir_power=2")
 #plt.plot(x, y21, label="ir_power=3")
-#plt.title('Pogobot Communication 1D \nrobots=[35][23],send_mode=*,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power \nrobots=[35][23],send_mode=*,clock=30Hz,msg_len=64')
 
 # GRAPH 13 : IRPOWER ir_power=1
-#plt.plot(x, y16, label="robots[6][4]")
+#plt.plot(x, y16, label="robots=[6][4]")
 #plt.plot(x, y18, label="robots=[31][32]")
 #plt.plot(x, y20, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=1,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power=1 \nsend_mode=*,ir_power=1,clock=30Hz,msg_len=64')
 
 # GRAPH 14 : IRPOWER ir_power=2
-#plt.plot(x, y1, label="robots[6][4]")
+#plt.plot(x, y1, label="robots=[6][4]")
 #plt.plot(x, y6, label="robots=[31][32]")
 #plt.plot(x, y11, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power=2 \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 
 # GRAPH 15 : IRPOWER ir_power=3
-#plt.plot(x, y17, label="robots[6][4]")
+#plt.plot(x, y17, label="robots=[6][4]")
 #plt.plot(x, y19, label="robots=[31][32]")
 #plt.plot(x, y21, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=3,clock=30Hz,msg_len=64')
+#plt.title('Pairwise Communication 1D : IR Power=3 \nsend_mode=*,ir_power=3,clock=30Hz,msg_len=64')
 
 # GRAPH 16 : MSG LENGTH ROBOTS=[6][4]
 #plt.plot(x, y22, label="msg_len=1")
 #plt.plot(x, y1, label="msg_len=64")
 #plt.plot(x, y23, label="msg_len=380")
-#plt.title('Pogobot Communication 1D \nrobots=[6][4],send_mode=*,ir_power=2,clock=30Hz')
+#plt.title('Pairwise Communication 1D : Message Length \nrobots=[6][4],send_mode=*,ir_power=2,clock=30Hz')
 
 # GRAPH 17 : MSG LENGTH ROBOTS=[31][32]
 #plt.plot(x, y24, label="msg_len=1")
 #plt.plot(x, y6, label="msg_len=64")
 #plt.plot(x, y25, label="msg_len=380")
-#plt.title('Pogobot Communication 1D \nrobots=[31][32],send_mode=*,ir_power=2,clock=30Hz')
+#plt.title('Pairwise Communication 1D : Message Length \nrobots=[31][32],send_mode=*,ir_power=2,clock=30Hz')
 
 # GRAPH 18 : MSG LENGTH ROBOTS=[35][23]
 #plt.plot(x, y26, label="msg_len=1")
 #plt.plot(x, y11, label="msg_len=64")
 #plt.plot(x, y27, label="msg_len=380")
-#plt.title('Pogobot Communication 1D \nrobots=[35][23],send_mode=*,ir_power=2,clock=30Hz')
+#plt.title('Pairwise Communication 1D : Message Length \nrobots=[35][23],send_mode=*,ir_power=2,clock=30Hz')
 
 # GRAPH 19 : MSG LENGTH msg_len=1
-#plt.plot(x, y22, label="robots[6][4]")
+#plt.plot(x, y22, label="robots=[6][4]")
 #plt.plot(x, y24, label="robots=[31][32]")
 #plt.plot(x, y26, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=1')
+#plt.title('Pairwise Communication 1D : Payload=1byte \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=1')
 
 # GRAPH 20 : MSG LENGTH msg_len=64
-#plt.plot(x, y1, label="robots[6][4]")
+#plt.plot(x, y1, label="robots=[6][4]")
 #plt.plot(x, y6, label="robots=[31][32]")
 #plt.plot(x, y11, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
+#plt.title('PPairwise Communication 1D : Payload=64bytes \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 
 # GRAPH 21 : MSG LENGTH msg_len=380
-#plt.plot(x, y23, label="robots[6][4]")
+#plt.plot(x, y23, label="robots=[6][4]")
 #plt.plot(x, y25, label="robots=[31][32]")
 #plt.plot(x, y27, label="robots=[35][23]")
-#plt.title('Pogobot Communication 1D \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=380')
+#plt.title('Pairwise Communication 1D : Payload=380bytes \nsend_mode=*,ir_power=2,clock=30Hz,msg_len=380')
 
 
 

@@ -23,29 +23,28 @@ p4 = [31.0758, 17419.6381, 100000000]
 
 #--------------------------------------------------------
 
-# GRAPH 1 : ROBOTS=[4]
-#plt.plot(x, y1, label="nb_neighbor=2")
-#plt.plot(x, y2, label="nb_neighbor=6")
-#plt.plot(x, y3, label="nb_neighbor=12")
-#plt.title('Neighbors Pogobot Communication \nrobot=[4], clock=30, msg_len=64')
 
 
-#GRAPH 2
 plt.plot(x, p1, label="p_send=0.1")
 plt.plot(x, p2, label="p_send=0.16")
 plt.plot(x, p3, label="p_send=0.5")
 plt.plot(x, p4, label="p_send=0.9")
-plt.title('N-to-N communication efficiency\nrobots=[4][...],send_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 
-# Mettre l'axe Y à une échelle logarithmique
+#GRAPH 1
 #plt.yscale('log')
+#plt.ylim(1, 10**4)  
 
-# Afficher le graphique
+#GRAPH2
+#plt.ylim(1, 1500) 
+
+#GRAPH3
+#plt.ylim(1, 10**4) 
+ 
+ 
+
 plt.xlim(0, 15)
-plt.ylim(1, 10**4)  # Vous pouvez ajuster les limites de l'axe Y selon vos besoins
-#plt.xlabel('probability of msg emission')
+plt.title('N-to-N communication efficiency\nrobots=[4][...],send_mode=*,ir_power=2,clock=30Hz,msg_len=64')
 plt.xlabel('number of neighbours')
 plt.ylabel('time to full discovery (milliseconds)')
 plt.legend(loc='upper left')
 plt.show()
-
